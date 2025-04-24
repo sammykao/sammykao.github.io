@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // Export the app as fully static HTML
-  output: 'export',
   images: {
     domains: ['i.scdn.co'],
     remotePatterns: [
