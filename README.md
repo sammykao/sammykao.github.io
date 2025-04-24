@@ -6,8 +6,7 @@ Welcome to my personal website, where I showcase my projects, experiences, blog 
 - My professional experiences and skills
 - A blog with posts pulled in from Medium
 - My latest Spotify listening history
-- Responsive design with dark/light mode support
-- Seamless deployment using GitHub Actions
+
 
 ## Live Site
 
