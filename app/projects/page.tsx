@@ -1,3 +1,6 @@
+'use client'
+
+
 import Link from 'next/link'
 import projectsData from '../data/projects.json'
 import { track } from '@vercel/analytics';
