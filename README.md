@@ -10,5 +10,5 @@ Welcome to my personal website, where I showcase my projects, experiences, blog 
 
 ## Live Site
 
-https://sammykao.github.io/
+https://sammykao.vercel.app/
 
