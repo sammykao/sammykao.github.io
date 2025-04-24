@@ -3,23 +3,21 @@ import type { Metadata } from 'next'
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
 import { Navbar } from './components/nav'
-import { Analytics } from '@vercel/analytics/react'
-import { SpeedInsights } from '@vercel/speed-insights/next'
 import Footer from './components/footer'
 import { baseUrl } from './sitemap'
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: 'Next.js Portfolio Starter',
-    template: '%s | Next.js Portfolio Starter',
+    default: 'My Personal Website',
+    template: '%s | My Personal Website',
   },
-  description: 'This is my portfolio.',
+  description: 'My personal website showcasing my projects, experiences, and blog.',
   openGraph: {
-    title: 'My Portfolio',
-    description: 'This is my portfolio.',
+    title: 'My Personal Website',
+    description: 'My personal website showcasing my projects, experiences, and blog.',
     url: baseUrl,
-    siteName: 'My Portfolio',
+    siteName: 'My Personal Website',
     locale: 'en_US',
     type: 'website',
   },
@@ -57,8 +55,6 @@ export default function RootLayout({
           <Navbar />
           {children}
           <Footer />
-          <Analytics />
-          <SpeedInsights />
         </main>
       </body>
     </html>

@@ -1,0 +1,64 @@
+[
+  {
+    "title": "Options Pricing API",
+    "description": "I was inspired to make this after my SIG discovery day event Sophomore year, where I learned about the importance of RPC latency in the quantitative finance industry. I've always been interested in options pricing, growing up playing with options volatility, and love the math behind different pricing models. Hudson River Trading has a lot of articles of things you can do with gRPC servers. For this project, I built a gRPC server that can price options using multiple pricing models. I used the Black-Scholes model, the Heston model, and the Variance Gamma model. I'm not really sold on Black-Scholes, as volatility tends to be dynamic and random.",
+    "link": "hhttps://github.com/sammykao/Options-Pricing-API",
+    "technologies": ["C++", "gRPC", "Makefiles", "Options Pricing", "Quantitative Finance"]
+  },
+  {
+    "title": "HelperU",
+    "description": "I've been co-building a platform for adults to hire college students for gig work, such as tutoring, dog walking, and more. Imagine TaskRabbit, but for college students.",
+    "link": "https://HelperU.com",
+    "technologies": ["React.js", "Typescript", "Python", "PostgreSQL", "Supabase", "AWS", "Stripe"]
+  },
+  {
+    "title": "Tufts Free Food Module",
+    "description": "I've built a module for Tufts University's mobile app that allows students to find free food on campus. I worked with the Tufts Unviersity Friedman School of Nutrition Science and Policy to build this, and we were able to pitch and partner with Tufts Technology Services to get the module built. It's now in the Tufts mobile app!",
+    "link": "https://m.tufts.edu/students/",
+    "technologies": ["Modo Labs", "Project Management", "Figma", "User testing"]
+  },
+  {
+    "title": "TouredIt",
+    "description": "For a very long time, this was my child. TouredIt is a startup focused on providing personalized tours of college campuses. The idea is that if your child is interested in a certain field, hobby, or social group, they should be able to tour college campuses with students exactly like them. I built the website, the backend, the tour guide portal, and everything in between. CPO, CTO, whatever you call it, imagine putting out technical fires 24/7. Shoutout Joshua Bernstein, my partner, for being a great example and friend. He is one of the most talented and resourceful people I know.",
+    "link": "https://www.touredit.com",
+    "technologies": ["React.js", "Express.js", "Node.js", "PostgreSQL", "AWS Lambda", "AWS Cognito", "Python"]
+  },
+  {
+    "title": "Nephwz",
+    "description": "Not a technical project, but something I'm extremely proud of. With a friend, we built a social media page named Nephwz. We posted curated art, music, and culture content. From Winter 2023 to Fall 2024, we amassed a little over 22,000 followers and got a 55M view reel. Unfortunately, with being a full time student athlete, recruiting for internships (Leetcode please save me), running TouredIt (We had marketing interns!), and launching the Tufts Free Food Module, I could not keep up with the content and had to stop. Many of the people we started along with have now become so massive. As much as I hate to admit it, watching our competitor, Flyhysteria, grow from 1000 to 78k followers was a fun experience. I'm not sure if I'll ever be able to top consitently getting 3000 likes on a post.",
+    "link": "https://www.instagram.com/nephwz/",
+    "technologies": ["Marketing", "Content Creation", "Instagram"]
+  },
+  {
+    "title": "Sports Twitter Sentiment Analysis",
+    "description": "My first ever full stack technical project, summer of my Freshman year. I built a sentiment analysis tool that scrapes Twitter data about the Philadelphia Union, analyzes the sentiment of the tweets, and displays the results in a dashboard. It parallizes it with recent news articles and match results about the Philadelphia Union to give a holistic view of the team's sentiment. I also tracked the rate of change in twitter sentiment, with cron jobs to text my cellphone if there was a significant change. The idea is that Sports Traders could have an advantage on betting lines before the market moves the line. Unfortunately, this was around when Twitter turned to X, and nuked their developers portal + any scraping ability, so this project became depreated.",
+    "link": "https://github.com/sammykao/sportsentiment",
+    "technologies": ["Python", "TensorFlow", "Flask", "SQLite3", "SnScrape", "Neural Networks"]
+  },
+  {
+    "title": "AI Food Similarity Search",
+    "description": "AI Powered tool to find nearby restaurants based on a picture of uploaded food. Ranks and displays restaurants by the restaurant's food image similarity. Backend built with Python and Flask framework. Hosted on AWS using Ubuntu EC2 Instance. Uses pre-trained Salesforce Blip model for image recognition and Vgg16 model for cosine similarity analysis. Uses bs4 for restaurant photo scraping and Scraping Bee API to bypass IP blocking. Yelp, I'm sorry for the love hate relationship we have. I think my computer IP was blocked from Yelp's website for scraping over 1000 times. I was just a broke college student in my dorm room, the project is deprecated anyways.",
+    "link": "https://github.com/sammykao/VisualHippo",
+    "technologies": ["Python", "IP Rotators", "Flask", "Beautiful Soup", "HuggingFace", "AWS"]
+  },
+  {
+    "title": "AI Notes App",
+    "description": "AI Powered notes app to keep track of all your notes while using AI to optimize key insights within them. NodeJs and ExpressJs backend w/ PassportJs for google authentication. MongoDB for Note and User Data, deployed with Heroku, and GPT-3.5 for note optimization",
+    "link": "https://github.com/sammykao/NotesApp",
+    "technologies": ["NodeJs", "ExpressJs", "MongoDB", "PassportJs", "HTML", "CSS", "Javascript", "Heroku"]
+  },
+  {
+    "title": "Bunzo Chat",
+    "description": "Ok. Did I build an custom AI RAG Chatbot for a Japanese Literature class, so I could spend less time reading the book and more time writing the paper (I did not plagarize, I used it for citing sources). Yes. I did. It's called Bunzo Chat, because the main character of 'The Drifting Cloud' is named Bunzo.",
+    "link": "https://github.com/sammykao/BunzoChat",
+    "technologies": ["Python", "Streamlit", "Gradio", "Langchain", "FAISS", "Vector Databases", "HuggingFace"]
+  },
+  {
+    "title": "Flowpa.co",
+    "description": "Freelance two-person side business building websites, AI chatbots, and automated marketing for small businesses. Partnered with Philmont FC soccer club to implement an AI chatbot solution (using OpenAI and FAISS vector database). Partnered with Forward Progress Injury care to run google ad marketing. Designed and built PHP oriented website for nephwz.com",
+    "link": "https://github.com/sammykao/",
+    "technologies": ["Python", "FAISS", "Vector Databases", "Javascript", "PHP", "HTML", "CSS"]
+  }
+  
+  
+] 

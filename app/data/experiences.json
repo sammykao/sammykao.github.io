@@ -1,0 +1,32 @@
+[
+  {
+    "company": "Kensho Technologies",
+    "title": "Incoming Software Engineer Intern",
+    "description": "Incoming for summer 2025 in New York City office",
+    "skills": ["TBD"]
+  },
+  {
+    "company": "Imprivata",
+    "title": "Software Engineer Intern",
+    "description": "As part of R&D team, built AI integration workflows using AWS Bedrock and Anthropic. Most notably, created a customer feedback data analysis tool that used AI agents to generate analysis report documents. Imprivata is a healthcare software company that provides secure authentication and authorization solutions for healthcare organizations, so it focused on a lot of high access data, and I spent a lot of time getting PII data clearance. My mentor, Preston Broderick, was one of the greatest Product Managers you'll meet. He was able to navigate working with a lot of different stakeholders; I have nothing but high praise for him.",
+    "skills": ["Python", "AWS", "GenAI", "AWS Bedrock", "LLMs", "Langchain"]
+  },
+  {
+    "company": "Starfin Ventures",
+    "title": "Software Engineer Intern",
+    "description": "Starfin Ventures was a startup that provided a platform for large building owners to lease their roof out to solar panel companies. I helped to build a map component that allowed building owners to select and display their building on a map, and then a backend clustering algorithm to sort value level of potential customers, based on Kwh potential. I also helped to migrate their legacy code from MongoDB to PostgreSQL.",
+    "skills": ["React.js", "Python", "PostgreSQL", "MongoDB", "Clustering Algorithms", "Express.js", "Node.js"]
+  },
+  {
+    "company": "Epoxy.AI",
+    "title": "Intern",
+    "description": "Oh man, I owe a lot to both Chris Reynolds and Jason Angelides. They were both my mentors at Epoxy.AI, and truly showed me what it meant to hustle. They were second time founders, building an AI sports betting started. Epoxy focused on providing tailored, AI driven, personalization for sports betting and casino companies. Every day was a hunt - I loved it. I was able to work on a lot of different projects, but the most impactful was a co-building a sales CRM pipeline from scratch. From data scraping conference websites for panel speakers, to writing my first AWS Sagemaker documentation, to doing lead generation work; this was what made me fall in love with fast paced environments.",
+    "skills": ["Python", "Zoho", "Lead Gen", "AWS Sagemaker", "Clustering"]
+  },
+  {
+    "company": "Tufts University",
+    "title": "Researcher",
+    "description": "My freshman Spring, I worked with the Tufts University Human Factors Lab on the facial recognition project. We were trying to build a system that iterated through facial generation until a user was satisfied with the face they had desired. We wanted to build some sort of algorithm that would iterate through a user's feedback and generate new faces. I was able to learn about convergence and reinforcement learning algorithms, and it was my first introduction to what NVIDIA GPUs were capable of. Little did I know... AI bubble he we are.",
+    "skills": ["Python", "C++", "Machine Learning Algorithms", "AI Algorithms"]
+  }
+] 

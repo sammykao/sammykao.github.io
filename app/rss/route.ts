@@ -1,36 +1,21 @@
 import { baseUrl } from 'app/sitemap'
-import { getBlogPosts } from 'app/blog/utils'
 
 export async function GET() {
-  let allBlogs = await getBlogPosts()
-
-  const itemsXml = allBlogs
-    .sort((a, b) => {
-      if (new Date(a.metadata.publishedAt) > new Date(b.metadata.publishedAt)) {
-        return -1
-      }
-      return 1
-    })
-    .map(
-      (post) =>
-        `<item>
-          <title>${post.metadata.title}</title>
-          <link>${baseUrl}/blog/${post.slug}</link>
-          <description>${post.metadata.summary || ''}</description>
-          <pubDate>${new Date(
-            post.metadata.publishedAt
-          ).toUTCString()}</pubDate>
-        </item>`
-    )
-    .join('\n')
-
+  // Instead of local blog posts, we're now linking to Medium
+  // So we return a simplified RSS feed that just points to Medium
+  
   const rssFeed = `<?xml version="1.0" encoding="UTF-8" ?>
   <rss version="2.0">
     <channel>
         <title>My Portfolio</title>
         <link>${baseUrl}</link>
-        <description>This is my portfolio RSS feed</description>
-        ${itemsXml}
+        <description>Check out my articles on Medium</description>
+        <item>
+          <title>My Medium Articles</title>
+          <link>https://medium.com/@${process.env.MEDIUM_USERNAME || 'user'}</link>
+          <description>Read my latest articles on Medium</description>
+          <pubDate>${new Date().toUTCString()}</pubDate>
+        </item>
     </channel>
   </rss>`
 
