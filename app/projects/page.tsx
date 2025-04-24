@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import projectsData from '../data/projects.json'
+import { track } from '@vercel/analytics';
 
 export const metadata = {
   title: 'Projects',
@@ -52,7 +53,7 @@ function ProjectCard({ title, description, link, technologies }) {
         </div>
       )}
       
-      <Link href={link} target="_blank" className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400 flex items-center">
+      <Link href={link} onClick={() => track('project_click', { project: title })} target="_blank" className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400 flex items-center">
         View Project
         <svg className="ml-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />

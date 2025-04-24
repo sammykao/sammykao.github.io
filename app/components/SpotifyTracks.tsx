@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { track } from '@vercel/analytics';
 
 type Track = {
   title: string;
@@ -98,19 +99,20 @@ export default function SpotifyTracks() {
     <div className="mt-8">
       <h2 className="font-medium tracking-tighter text-lg mb-4">Recent Tracks</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        {tracks.map((track, index) => (
+        {tracks.map((t, index) => (
           <Link 
-            href={track.songUrl}
-            key={track.playedAt + index}
+            href={t.songUrl}
+            key={t.playedAt + index}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => track('spotify_track_click', { track: t.title })}
             className="group flex items-center space-x-4 rounded-md border border-neutral-200 dark:border-neutral-800 p-2 transition-all hover:bg-neutral-100 dark:hover:bg-neutral-900"
           >
-            {track.albumImageUrl ? (
+            {t.albumImageUrl ? (
               <div className="relative h-14 w-14 min-w-[56px] overflow-hidden">
                 <Image
-                  src={track.albumImageUrl}
-                  alt={track.album}
+                  src={t.albumImageUrl}
+                  alt={t.album}
                   fill
                   className="object-cover"
                   sizes="56px"
@@ -126,8 +128,8 @@ export default function SpotifyTracks() {
               </div>
             )}
             <div className="min-w-0 flex-1">
-              <p className="font-medium truncate text-sm">{track.title}</p>
-              <p className="text-xs text-neutral-600 dark:text-neutral-400 truncate">{track.artist}</p>
+              <p className="font-medium truncate text-sm">{t.title}</p>
+              <p className="text-xs text-neutral-600 dark:text-neutral-400 truncate">{t.artist}</p>
             </div>
           </Link>
         ))}

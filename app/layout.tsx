@@ -5,16 +5,17 @@ import { GeistMono } from 'geist/font/mono'
 import { Navbar } from './components/nav'
 import Footer from './components/footer'
 import { baseUrl } from './sitemap'
+import { Analytics } from '@vercel/analytics/next'
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: 'My Personal Website',
+    default: 'Sammy Kao',
     template: '%s | My Personal Website',
   },
   description: 'My personal website showcasing my projects, experiences, and blog.',
   openGraph: {
-    title: 'My Personal Website',
+    title: 'Sammy Kao',
     description: 'My personal website showcasing my projects, experiences, and blog.',
     url: baseUrl,
     siteName: 'My Personal Website',
@@ -56,6 +57,7 @@ export default function RootLayout({
           {children}
           <Footer />
         </main>
+        <Analytics />
       </body>
     </html>
   )

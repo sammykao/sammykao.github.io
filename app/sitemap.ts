@@ -1,4 +1,4 @@
-export const baseUrl = 'https://portfolio-blog-starter.vercel.app'
+export const baseUrl = 'https://sammykao.vercel.app'
 
 export default async function sitemap() {
   // Now that we're only using Medium, we don't generate blog post pages in our sitemap
