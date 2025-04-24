@@ -2,7 +2,7 @@
   {
     "title": "Options Pricing API",
     "description": "I was inspired to make this after my SIG discovery day event Sophomore year, where I learned about the importance of RPC latency in the quantitative finance industry. I've always been interested in options pricing, growing up playing with options volatility, and love the math behind different pricing models. Hudson River Trading has a lot of articles of things you can do with gRPC servers. For this project, I built a gRPC server that can price options using multiple pricing models. I used the Black-Scholes model, the Heston model, and the Variance Gamma model. I'm not really sold on Black-Scholes, as volatility tends to be dynamic and random.",
-    "link": "hhttps://github.com/sammykao/Options-Pricing-API",
+    "link": "https://github.com/sammykao/Options-Pricing-API",
     "technologies": ["C++", "gRPC", "Makefiles", "Options Pricing", "Quantitative Finance"]
   },
   {
@@ -31,7 +31,7 @@
   },
   {
     "title": "Sports Twitter Sentiment Analysis",
-    "description": "My first ever full stack technical project, summer of my Freshman year. I built a sentiment analysis tool that scrapes Twitter data about the Philadelphia Union, analyzes the sentiment of the tweets, and displays the results in a dashboard. It parallizes it with recent news articles and match results about the Philadelphia Union to give a holistic view of the team's sentiment. I also tracked the rate of change in twitter sentiment, with cron jobs to text my cellphone if there was a significant change. The idea is that Sports Traders could have an advantage on betting lines before the market moves the line. Unfortunately, this was around when Twitter turned to X, and nuked their developers portal + any scraping ability, so this project became depreated.",
+    "description": "My first ever full stack technical project, summer of my Freshman year. I built a sentiment analysis tool that scrapes Twitter data about the Philadelphia Union, analyzes the sentiment of the tweets, and displays the results in a dashboard. It parallizes it with recent news articles and match results about the Philadelphia Union to give a holistic view of the team's sentiment. I also tracked the rate of change in twitter sentiment, with cron jobs to text my cellphone if there was a significant change. The idea is that Sports Traders could have an advantage on betting lines before the market moves the line. Unfortunately, this was around when Twitter turned to X, and nuked their developers portal + any scraping ability, so this project became deprecated.",
     "link": "https://github.com/sammykao/sportsentiment",
     "technologies": ["Python", "TensorFlow", "Flask", "SQLite3", "SnScrape", "Neural Networks"]
   },
