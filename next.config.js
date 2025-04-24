@@ -1,26 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Export the app as fully static HTML
+  output: 'export',
   images: {
     domains: ['i.scdn.co'],
     remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'scontent.cdninstagram.com',
-      },
-      {
-        protocol: 'https',
-        hostname: '*.cdninstagram.com',
-      },
-      {
-        protocol: 'https',
-        hostname: 'images.unsplash.com',
-      },
-      {
-        protocol: 'https',
-        hostname: '*.fbcdn.net',
-      }
+      { protocol: 'https', hostname: 'images.unsplash.com' },
+      { protocol: 'https', hostname: '*.fbcdn.net' }
     ],
-  }
+  },
 };
 
 module.exports = nextConfig; 

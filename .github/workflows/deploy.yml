@@ -17,8 +17,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build and export
-        run: npm run build && npm run export
+      - name: Build site
+        run: npm run build
         env:
           MEDIUM_USERNAME: ${{ secrets.MEDIUM_USERNAME }}
           SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
