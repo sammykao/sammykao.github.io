@@ -1,0 +1,10 @@
+[
+  {
+    "title": "AI Agent Marketplace",
+    "description": "I'm a big fan of RapidAPI, and I think it's a great idea to have a marketplace for APIs. I want to build a similar platform, but for AI agents. I want to make it easy for developers to find and use AI agents, and developers to sell their AI agent use. MCP server use isn't cheap at scale, so enterprise will be a big market for agents intially, but the new age of software is AI agents, and I think we'll see a lot of agents be an abstraction over APIs."
+  }, 
+  {
+    "title": "Fitness Class Tracker",
+    "description": "I literally just built a gift for my friend which included an orange theory tracker dashboard (stats, bookings, etc). Unsurprisingly, an org like OT doesn't have a developers API, so I had to attach some Python serverless functions to a simple Next.js project because the only available option was a python library that reverse engineered the OT website. It led me to the idea to basically create a standardized framework/library to reverse engineer and build a makeshift SDK/API for any fitness class or gym org. Would allow you to build an abstraction such as an easily monetizable app for tracking/managing all the different type of fintess classes you go to (Barry's, Orange Theory, Pilates, etc)."
+  }
+] 
