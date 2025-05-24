@@ -1,5 +1,17 @@
 [
   {
+    "title": "Orange Theory AI Agent",
+    "description": "Used custom MCP server built around unofficial orange theory client library to build an AI agent for my gf that acts as her personal Orange Theory assistant. Uses A2A server system as well, with Next.Js frontend demo.",
+    "link": "https://github.com/sammykao/orange_theory_ai_agent",
+    "technologies": ["Python", "A2A", "MCP", "Langgraph", "AI Agents", "Langchain", "Next.Js"]
+  }, 
+  {
+    "title": "LLM from scratch",
+    "description": "I built a GPT style transformer LLM from scratch. I used the PyTorch framework to build the model. Also used Wizard of Oz, and Vocab data. Really learned a lot about the math behind LLMs, and how they work. Also learned why I really need Nvidia GPUs. Google Colab saved my butt.",
+    "link": "https://github.com/sammykao/llm_from_scratch",
+    "technologies": ["Python", "PyTorch", "Tokenizers", "LLMs", "Parallel Computing", "NLP", "GenAI"]
+  }, 
+  {
     "title": "Options Pricing API",
     "description": "I was inspired to make this after my SIG discovery day event Sophomore year, where I learned about the importance of RPC latency in the quantitative finance industry. I've always been interested in options pricing, growing up playing with options volatility, and love the math behind different pricing models. Hudson River Trading has a lot of articles of things you can do with gRPC servers. For this project, I built a gRPC server that can price options using multiple pricing models. I used the Black-Scholes model, the Heston model, and the Variance Gamma model. I'm not really sold on Black-Scholes, as volatility tends to be dynamic and random.",
     "link": "https://github.com/sammykao/Options-Pricing-API",
