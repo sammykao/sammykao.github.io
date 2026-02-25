@@ -1,10 +1,6 @@
 [
   {
-    "title": "AI Agent Marketplace",
-    "description": "I'm a big fan of RapidAPI, and I think it's a great idea to have a marketplace for APIs. I want to build a similar platform, but for AI agents. I want to make it easy for developers to find and use AI agents, and developers to sell their AI agent use. MCP server use isn't cheap at scale, so enterprise will be a big market for agents intially. But, the new age of software is AI agents, and I think we'll see a lot of agents be an abstraction over APIs."
-  }, 
-  {
-    "title": "Fitness Class Tracker",
-    "description": "Recently, I built a gift for my friend which included an orange theory tracker dashboard (stats, bookings, etc). Unsurprisingly, an org like OT doesn't have a developers API, so I had to attach some Python serverless functions to a simple Next.js project because the only available option was a python library that reverse engineered the OT website. It led me to the idea to basically create a standardized framework/library to reverse engineer and build a makeshift SDK/API for any fitness class or gym org. Would allow you to build an abstraction such as an easily monetizable app for tracking/managing all the different type of fintess classes you go to (Barry's, Orange Theory, Pilates, etc). Also if you're methodical enough, you could try and partnering with the gyms to turn it into a premium based developers API."
+    "title": "AI Interaction Tracker",
+    "description": "Let's be clear. AI is the future. AI is the future due to accessibility of infromation. NOT because you can automate everything with an AI agent and replace all workers. God, I see so much doom-fantasy online about how AI will take our jobs. It won't. It's statistical autocomplete. With that being said, AI will greatly transform education. Most students use it now anyways to learn. Why not govern and build a tool that can analyze someones conversation with AI to see if they're using it for their benefit by delaying gratification and using it to help them digest concepts + apply learning or simply just trying to be lazy and have a model do all their work. A tool like this can rapidly transform the education system, allowing incredible learning and innovation. It can also be used by companies for hiring, such as leetcode style interviews, or analysis of coding agent use in junior devs, etc."
   }
 ] 

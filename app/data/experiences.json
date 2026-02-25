@@ -1,9 +1,9 @@
 [
   {
     "company": "Kensho Technologies",
-    "title": "Incoming Software Engineer Intern",
-    "description": "Incoming for summer 2025 in New York City office",
-    "skills": ["TBD"]
+    "title": " Software Engineer Intern",
+    "description": "Built an automated scanning tool for model red-teaming security vulnerabilities, piping data using Prometheus to a Grafana dashboard. Most modern day models are surprisingly very unsafe when it comes to things like SQLInjection and Hex Encoding.",
+    "skills": ["Python, LiteLLM, Apache Airflow, Kubernetes, Docker, Garak, Prometheus, Grafana"]
   },
   {
     "company": "Imprivata",

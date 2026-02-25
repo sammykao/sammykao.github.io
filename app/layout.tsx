@@ -4,6 +4,7 @@ import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
 import { Navbar } from './components/nav'
 import Footer from './components/footer'
+import BackgroundLayer from './components/BackgroundLayer'
 import { baseUrl } from './sitemap'
 import { Analytics } from '@vercel/analytics/next'
 
@@ -51,8 +52,9 @@ export default function RootLayout({
         GeistMono.variable
       )}
     >
-      <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
-        <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
+      <body className="antialiased relative max-w-xl mx-4 mt-8 lg:mx-auto">
+        <BackgroundLayer />
+        <main className="relative z-10 flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
           <Navbar />
           {children}
           <Footer />

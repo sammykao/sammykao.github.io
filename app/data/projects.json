@@ -1,5 +1,29 @@
 [
   {
+    "title": "Agosec",
+    "description": "Built an AI-first iOS keyboard extension + container app with Agent Mode chat, screenshot context import, and StoreKit2 subscription gating. The keyboard sends OpenAI-format `/v1/chat/completions` requests to my LiteLLM backend fork, using custom implemented auth. It bootstraps proxy keys for model routing with default Deepseek-chat but also BYOK for OpenAI/Anthropic/Gemini models.",
+    "link": "https://agosec.io",
+    "technologies": ["Swift", "Python", "FastAPI", "SwiftUI", "LiteLLM", "PostgreSQL", "Docker", "OCR", "AI Tooling"]
+  },
+  {
+    "title": "Monte Carlo Right-Turn RL Agent",
+    "description": "Built a custom racetrack reinforcement learning environment in pygame where a Monte Carlo agent learns to navigate randomized R-shaped tracks. Implemented episode-based policy evaluation, epsilon exploration, real-time training visualization, and interactive controls for generating tracks, pausing, and resetting runs.",
+    "link": "https://github.com/sammykao/Monte-Carlo-Right-Turn-RLAgent",
+    "technologies": ["Python", "Reinforcement Learning", "Monte Carlo Methods", "Pygame", "NumPy", "Pydantic"]
+  },
+  {
+    "title": "CS138 RL Ticket Pricing Agent",
+    "description": "Built a dynamic ticket pricing agent for live events (Tufts COMP 138 final project) using both Tabular Q-Learning and DQN. Trained against a data-driven ticket demand simulator inspired by SeatData.io data, compared against heuristic baselines, and added visualization and checkpointed training workflows for long-run experiments.",
+    "link": "https://github.com/sammykao/CS138-RL-TicketPricing-Agent",
+    "technologies": ["Python", "Reinforcement Learning", "Q-Learning", "DQN", "PyTorch", "Gymnasium", "Pandas", "Matplotlib", "Seaborn", "Pygame"]
+  },
+  {
+    "title": "LinkedIn Student Email Scraper",
+    "description": "Built an automated LinkedIn student profile scraper that logs in, applies school filters, extracts profile metadata, and stores results in SQLite with logging and rate limiting. Extended it with an outreach pipeline that generates likely school email patterns and sends tracked Gmail SMTP campaigns with delivery status updates.",
+    "link": "https://github.com/sammykao/linkedin_student_email_scraper",
+    "technologies": ["Python", "Selenium", "Web Scraping", "SQLite", "Gmail SMTP", "Pandas", "BeautifulSoup", "Automation"]
+  },
+  {
     "title": "Orange Theory AI Agent",
     "description": "Used custom MCP server built around unofficial orange theory client library to build an AI agent for my gf that acts as her personal Orange Theory assistant. Uses A2A server system as well, with Next.Js frontend demo.",
     "link": "https://github.com/sammykao/orange_theory_ai_agent",
@@ -19,7 +43,7 @@
   },
   {
     "title": "HelperU",
-    "description": "I've been co-building a platform for adults to hire college students for gig work, such as tutoring, dog walking, and more. Imagine TaskRabbit, but for college students.",
+    "description": "Co-built a platform for adults to hire college students for gig work, such as tutoring, dog walking, and more. Imagine TaskRabbit, but for college students. Sold to JouwAIPartner in December 2025 to be turned into an AI Skills Marketplace.",
     "link": "https://HelperU.com",
     "technologies": ["React.js", "Typescript", "Python", "PostgreSQL", "Supabase", "AWS", "Stripe"]
   },
