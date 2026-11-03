@@ -67,7 +67,6 @@ export async function writeVisitor(request: Request, visitor: Omit<Visitor, 'loc
     ...visitor,
     location,
     visitedAt,
-    ip,
     userAgent,
     path,
   }), { access: 'private', contentType: 'application/json' })
