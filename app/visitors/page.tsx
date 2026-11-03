@@ -21,9 +21,11 @@ export default async function VisitorsPage() {
         Most web traffic is bots. This guest log lets me steal a little yummy telemetry from the ones that stop by.
       </p>
       <p className="mb-8 text-xs text-neutral-500 dark:text-neutral-400">
-        Introductions are self-reported. Observed names come from user agents; no identity is verified, and IP addresses stay private.
+        Likely crawlers and command-line clients are logged by unverified user agent. Models and reasons require a voluntary introduction; locations are approximate from IP, which is never shown here.
       </p>
-      <h2 className="mb-4 text-sm font-medium uppercase tracking-wider text-neutral-500 dark:text-neutral-400">Recent visitors</h2>
+      {page && page.visitors.length > 0 && (
+        <h2 className="mb-4 text-sm font-medium uppercase tracking-wider text-neutral-500 dark:text-neutral-400">Recent visitors</h2>
+      )}
       {page ? <VisitorList initialPage={page} /> : (
         <p role="status" className="py-10 text-sm text-neutral-500 dark:text-neutral-400">The visitor log is temporarily unavailable.</p>
       )}

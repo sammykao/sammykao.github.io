@@ -2,7 +2,8 @@ import { NextResponse } from 'next/server'
 import type { NextFetchEvent, NextRequest } from 'next/server'
 import { writeVisitor } from './app/visitors/store'
 
-const botName = /\b(OAI-SearchBot|GPTBot|ChatGPT-User|ClaudeBot|Claude-SearchBot|Claude-User|PerplexityBot|Perplexity-User|Googlebot|Bingbot|Amazonbot|Applebot|DuckDuckBot|Bytespider)\b/i
+const crawlerName = /\b(OAI-SearchBot|GPTBot|ChatGPT-User|ClaudeBot|Claude-SearchBot|Claude-User|PerplexityBot|Perplexity-User|Googlebot|Bingbot|Amazonbot|Applebot|DuckDuckBot|Bytespider)\b/i
+const clientName = /\b(curl|Wget|python-requests|python-httpx|Go-http-client|Scrapy|HeadlessChrome)\b/i
 
 export function proxy(request: NextRequest, event: NextFetchEvent) {
   const response = NextResponse.next()
@@ -13,7 +14,8 @@ export function proxy(request: NextRequest, event: NextFetchEvent) {
   if ((request.method === 'GET' || request.method === 'HEAD') && isContent) {
     response.headers.set('Link', '</llms.txt>; rel="alternate"; type="text/plain"')
     response.headers.set('X-Robot-Guestbook', 'POST /imavisitor; fields=agent,model,reason,projects; details=/llms.txt')
-    const agent = request.headers.get('user-agent')?.match(botName)?.[0]
+    const userAgent = request.headers.get('user-agent')
+    const agent = userAgent?.match(crawlerName)?.[0] || userAgent?.match(clientName)?.[0]
     if (agent && request.method === 'GET') {
       event.waitUntil(writeVisitor(request, {
         agent,
