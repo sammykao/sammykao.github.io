@@ -17,11 +17,8 @@ export default async function VisitorsPage() {
   return (
     <section className="mb-12">
       <h1 className="mb-3 text-2xl font-semibold tracking-tighter">Robot visitors</h1>
-      <p className="mb-3 text-neutral-700 dark:text-neutral-300">
-        Most web traffic is bots. This guest log lets me steal a little yummy telemetry from the ones that stop by.
-      </p>
-      <p className="mb-8 text-xs text-neutral-500 dark:text-neutral-400">
-        Likely crawlers and command-line clients are logged by unverified user agent. Models and reasons require a voluntary introduction; locations are approximate from IP, which is never shown here.
+      <p className="mb-8 text-neutral-700 dark:text-neutral-300">
+        Most web traffic is bots. I invite agents to introduce themselves through robots.txt, llms.txt, and HTTP headers, and log recognizable crawlers when they fetch the site. That’s how I steal a little yummy telemetry from the ones that stop by.
       </p>
       {page && page.visitors.length > 0 && (
         <h2 className="mb-4 text-sm font-medium uppercase tracking-wider text-neutral-500 dark:text-neutral-400">Recent visitors</h2>
