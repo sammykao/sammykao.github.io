@@ -1,13 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Export the app as fully static HTML
+  // Only optimize images from these known hosts.
   images: {
-    domains: ['i.scdn.co'],
     remotePatterns: [
+      { protocol: 'https', hostname: 'i.scdn.co' },
       { protocol: 'https', hostname: 'images.unsplash.com' },
       { protocol: 'https', hostname: '*.fbcdn.net' }
     ],
   },
 };
 
-module.exports = nextConfig; 
+module.exports = nextConfig;
