@@ -1,5 +1,11 @@
 [
   {
+    "title": "Memiry",
+    "description": "Built an AI agent from scratch that integrated with most oauth providers, wired into an IOS app. As agent capabilities from frontier companies expanded, I eventually transition it to an AI agent that controls your screen time. I figured out a way to unsandbox IOS screen time to a backend system, shhhhh.",
+    "link": "https://memiry.com",
+    "technologies": ["React Native", "Python", "Swift", "FastAPI", "LiteLLM", "PostgreSQL", "Langgraph", "MCP", "AI Tooling"]
+  },
+  {
     "title": "Agosec",
     "description": "Built an AI-first iOS keyboard extension + container app with Agent Mode chat, screenshot context import, and StoreKit2 subscription gating. The keyboard sends OpenAI-format `/v1/chat/completions` requests to my LiteLLM backend fork, using custom implemented auth. It bootstraps proxy keys for model routing with default Deepseek-chat but also BYOK for OpenAI/Anthropic/Gemini models.",
     "link": "https://agosec.io",
@@ -42,22 +48,10 @@
     "technologies": ["C++", "gRPC", "Makefiles", "Options Pricing", "Quantitative Finance"]
   },
   {
-    "title": "HelperU",
-    "description": "Co-built a platform for adults to hire college students for gig work, such as tutoring, dog walking, and more. Imagine TaskRabbit, but for college students. Sold to JouwAIPartner in December 2025 to be turned into an AI Skills Marketplace.",
-    "link": "https://HelperU.com",
-    "technologies": ["React.js", "Typescript", "Python", "PostgreSQL", "Supabase", "AWS", "Stripe"]
-  },
-  {
     "title": "Tufts Free Food Module",
     "description": "I've built a module for Tufts University's mobile app that allows students to find free food on campus. I worked with the Tufts Unviersity Friedman School of Nutrition Science and Policy to build this, and we were able to pitch and partner with Tufts Technology Services to get the module built. It's now in the Tufts mobile app!",
     "link": "https://m.tufts.edu/students/",
     "technologies": ["Modo Labs", "Project Management", "Figma", "User testing"]
-  },
-  {
-    "title": "TouredIt",
-    "description": "For a very long time, this was my child. TouredIt is a startup focused on providing personalized tours of college campuses. The idea is that if your child is interested in a certain field, hobby, or social group, they should be able to tour college campuses with students exactly like them. I built the website, the backend, the tour guide portal, and everything in between. CPO, CTO, whatever you call it, imagine putting out technical fires 24/7. Shoutout Joshua Bernstein, my partner, for being a great example and friend. He is one of the most talented and resourceful people I know.",
-    "link": "https://www.touredit.com",
-    "technologies": ["React.js", "Express.js", "Node.js", "PostgreSQL", "AWS Lambda", "AWS Cognito", "Python"]
   },
   {
     "title": "Nephwz",
